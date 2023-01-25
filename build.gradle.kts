@@ -16,6 +16,16 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.security:spring-security-test")
+
+	// lombok
+	compileOnly("org.projectlombok:lombok:1.18.24")
+	annotationProcessor("org.projectlombok:lombok:1.18.24")
+
+	testCompileOnly("org.projectlombok:lombok:1.18.24")
+	testAnnotationProcessor("org.projectlombok:lombok:1.18.24")
+
+	// common-codec
+	implementation("commons-codec:commons-codec:1.15")
 }
 
 tasks.withType<Test> {
